@@ -1,0 +1,448 @@
+body{
+   
+ }
+
+h1{
+    font-family: "Freestyle Script";
+    font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+    
+}
+
+
+
+.aha {
+    
+   padding: 15px;
+    text-align: center;
+    margin-top: -5px;
+    
+    
+}
+.SM{
+    
+    color: black;
+    text-decoration: none;
+    right: 30px;
+}
+
+
+    .mainbody{
+        background-image: url(images/cover1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        
+        
+    }
+    #quote {
+         margin-top: 170%;
+    }
+
+
+    #bcg {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: dimgrey;
+}
+
+#centered {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    font-family: Vivaldi;
+    font-size: 30px;
+    ;
+}
+
+#link {
+    position: absolute;
+    top: 57%;
+    left: 6%;
+    
+    background-color:black;
+    opacity: 0.4;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: roboto light;
+    font-size: 40px;
+    text-decoration: none;
+    color: lightpink;
+    ;
+}
+
+ 
+
+#logo {
+    height: 50px;
+    grid-area: lg;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #606464;
+    
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #ec778a;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (min-width:500px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#burger {
+    width: 30px;
+    flex: auto;
+    float: right;
+/*    padding-right: 5px;*/
+/*
+    position: fixed;
+    z-index: 1;
+*/
+}
+
+.newproduct {
+    width: 50px;
+    height: 100px;
+    display: inline;
+}
+
+.ctg {
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+
+
+
+.event{
+    float: left;
+    background-color:#ffffff;
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}   .event:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+
+    
+}
+.event2{
+    float: left;
+    
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    border: 2px solid;
+    margin:5px; 
+    border-style: outset;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.butt{
+    color: black;
+    background: #ec778a;
+    border-radius: 25px;
+   width: 6.7em;
+    height: 2.5em;
+    
+}
+.read-more{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.read-more2{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.buy{
+    border-radius: 25px;
+    width: 6.7em;
+    height: 2.5em;
+    background: #ec778a;
+    color: #000000;
+    cursor: pointer;
+}
+.butt,  .buy:hover {
+
+    box-shadow: 0 8px 12px 0  rgba(0,0,0,0.2);
+}
+
+//*accortion*//
+        a.accordion.active, a.accordion:hover {
+    background-color: #ccc; 
+}
+
+div.panel {
+    padding: 18px;
+    display: none;
+    
+}
+
+#desk{
+    display: none;
+}
+#logomain{
+        height: 60px;
+    }
+
+
+//*drop-down menu*//
+
+
+.dropbtn:hover, .dropbtn:focus {
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(255,250,250,.8);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+.dropdown-content a {
+    color: gainsboro;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown a:hover {color: lightgrey}
+
+.show {display:block;}
+
+.event{
+    width: 90%;
+    border: 2px solid;
+    margin:5px; 
+    border-style: outset;
+}
+
+
+
+@media screen and (min-width:1000px) {
+    .mainbody{
+        background-image: url(images/background.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+
+
+    #logomain{
+        height: 80px;
+    }
+    
+
+
+
+    #desk{
+        border-top: black solid 2px;
+        border-bottom: black solid 2px;
+        
+        display: table;
+        width: 50%;
+       
+        
+    }
+    .desko{
+        text-decoration: none;
+        font-size: 25px;
+        color: #000000;
+        margin-right: 17px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    .desko:hover{
+        color: #ec778a;
+    }
+    .dropdown-content a {
+        
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+        font-family: 'Roboto', sans-serif;
+}
+    #dropbtn:hover{
+        color: #ec778a;
+    }
+    
+    .dropdown-content{
+        background: #606464;
+        color: #ffffff;
+    }
+
+.dropdown-content a:hover {background-color: #ec778a;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+    .sidenav, #burger{
+        display: none;
+    }
+
+    
+/*    about page*/
+    
+   
+   
+video {
+  background: pink;
+  border: 2px solid pink;
+    border-radius: 5%;
+  margin-left: 60%;
+    margin-top: 5%;
+      
+}
+ 
+    
+    .aboutpage{
+         
+  padding-right: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+        
+    .container {
+  display: flex;
+}

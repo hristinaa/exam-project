@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+/*
+#cont {
+    background: red;
+   min-height:100%;
+   position:relative;
+}
+*/
+
+/*
+#main {
+   padding:10px;
+   padding-bottom:60px;   
+}
+        
+*/
+        /* Height of the footer */
+/*
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;    Height of the footer 
+   background-color: grey;
+}
+*/
+        #logomain{
+            height: 70px;
+        }
+
+    
+    
+/* The side navigation menu */
+   .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #606464;
+    
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #ec778a;
+}
+/*        grid*/
+        section{
+          
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, 200px);
+            grid-template-rows: 3;
+        justify-content: center;
+        background-color:#ffffff;}
+        
+        #main{
+    display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+            grid-template-areas: 
+                
+            "  as sect bs  "
+                "  as sect bs "
+            
+           }
+    
+       section{
+                grid-area: sect;
+           align-content: center;
+/*
+           display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1em;
+               align-content: center;
+*/
+
+            }
+        aside{
+            grid-area: as;
+/*            background: red;*/
+        }
+        bside{
+            grid-area: bs;
+/*            background: blue;*/
+        }
+        
+       
+        @media screen and (max-width:500px){
+            
+           
+          #main{
+               
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                
+            "as  sect bs "
+                "as  sect bs"
+            
+           }
+    
+       section{
+                grid-area: sect;
+            }
+        aside{
+            grid-area: as;
+/*            background: red;*/
+        }
+        bside{
+            grid-area: bs;
+/*            background: blue;*/
+        }
+        
+         }
+    
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+  <header>
+            <center><a href="index.html"><img id="logomain" src="images/newlogo1.png"></a><span onclick="openNav()"><img id="burger" src="images/BurgerMenu2.png"></span><center>
+            <div id="desk">
+                
+                <a class="desko"href="index.html">Home</a>
+                <div class="dropdown">
+  <a id="dropbtn" class="desko" href="gallery.html">Gallery</a>
+  <div class="dropdown-content">
+    
+                <ul id="tagMenu">
+                    
+                <template id="linkTemplate">
+                    
+                    <li><a href="#">Item1</a></li>
+                </template>
+            </ul>
+  </div>
+</div>
+                <a class="desko" href="about.html">About Iri</a>
+                <a class="desko" href="contact.html">Contact</a>
+                
+                    
+            
+            
+            </div>
+                </center>
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+                <a class="accordion" href="#">Gallery</a>
+<div class="panel">
+  
+
+                <ul id="tagMenu">
+                    <a href="gallery.html">All</a>
+                <template id="linkTemplate">
+                    
+                    <li><a href="#">Item1</a></li>
+                </template>
+            </ul>
+                    </div>
+                
+                
+  <a href="about.html">About Iri</a>
+  <a href="contact.html">Contact</a>
+</div>
+            <span onclick="openNav()"><img id="burger"></span></center>
+        </header>
+    
+        <ul id="tagMenu">
+                  
+                <template id="linkTemplate">
+                    <li>All</li>
+                    <li><a href="#">Item1</a></li>
+                </template>
+            </ul>
+        <div id="main">
+    <center>
+     <section id="list"></section>
+            <template class="eventTemplate">
+        <article class="event">
+            <h1></h1>
+             <img class="img" src="" alt="" style="width:48%">
+            <p class="price">Price: Dkk <span></span></p>
+            
+            
+            
+            
+            <p><button class="butt"><a class="read-more" href="single.html">Details</a></button></p>
+            
+        </article>
+                 
+    </template>
+        
+        </center>
+            <aside></aside>
+        <bside></bside>
+            </div>
+       
+        
+       
+    
+    </div>
+<!--
+    <div class="footer">
+        
+        <div class="aha">
+    <img class="foot" src="images/instagram.png"><a class="SM" href="https://www.instagram.com/irijewellery/">Instagram</a>
+    <img class="foot" src="images/Mail-icon.png"><a class="SM" href="https://www.instagram.com/irijewellery/">irijewellry@gmail.com</a>
+    <img class="foot" src="images/Facebook-c.png"><a class="SM" href="https://www.facebook.com/IriJewelleryHandmade/">facebook</a></div>
+        
+        
+    </div>
+-->
+    <script src="main.js"></script>
+    
+
+</body>
+</html>
